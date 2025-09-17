@@ -1,0 +1,7 @@
+.services-top-margin {
+  margin-top: 120px; 
+}
+.card-img-top {
+  height: 180px;      
+  object-fit: cover;   
+}

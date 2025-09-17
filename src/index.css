@@ -1,0 +1,25 @@
+/* index.css */
+
+/* Reset margin and padding for the whole page */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif; /* Or your preferred font */
+  background-color: #fff; /* Default background */
+  color: #000; /* Default text color */
+  height: 100%;
+}
+
+/* You can add small global utility classes or overrides here */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* in index.css or App.css */
+.btn-primary:hover {
+  background-color: #7a1e1e !important;
+  border-color: #7a1e1e !important;
+}
+
+

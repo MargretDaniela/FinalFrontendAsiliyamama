@@ -1,0 +1,67 @@
+/* Animation CSS - No changes needed here */
+.slide-left, .slide-right {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.7s ease-out;
+  will-change: transform, opacity;
+}
+
+.slide-left {
+  transform: translateX(-50px) translateY(50px);
+}
+
+.slide-right {
+  transform: translateX(50px) translateY(50px);
+}
+
+.slide-left.visible, .slide-right.visible {
+  opacity: 1;
+  transform: translateX(0) translateY(0);
+}
+
+/* --- Hero Section Content Styling --- */
+
+/* Main hero text container */
+.position-absolute.top-50.start-50.translate-middle.text-white.text-center.p-4.z-2 {
+  max-width: 90%; 
+  text-align: center;
+}
+
+/* Main headline: e.g., "SUPPORT YOUNG LIVES" */
+.position-absolute.top-50.start-50.translate-middle h2 {
+  font-size: 2.5rem; /* Reduced font size */
+  font-weight: 700; 
+  margin-bottom: 1rem;
+  line-height: 1.1; 
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+}
+
+/* Specific styling for the emphasized word, e.g., "YOUNG LIVES" */
+.hero-headline-emphasis {
+  color: #800000 !important; /* Maroon color */
+  font-weight: 900; 
+  font-size: 2.7rem; /* Slightly larger than the rest of the headline */
+  font-style: italic; /* Added italic style */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+  margin-left: 0.5rem;
+}
+
+/* Specific styling for the subheadline */
+.hero-subheadline {
+  font-size: 1.5rem; 
+  line-height: 1.6;
+  font-weight: 400; 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+}
+
+/* Styling for the "JOIN US" button */
+.position-absolute.bottom-0.end-0 a.btn {
+  font-size: 1.25rem; 
+  padding: 15px 30px;
+  font-weight: bold;
+  background-color: #800000; 
+  border-color: #800000;
+  border-radius: 5px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+}

@@ -1,0 +1,504 @@
+/* 
+@keyframes rotateHeart {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating-heart {
+  display: inline-block;
+  animation: rotateHeart 2s linear infinite;
+}
+
+
+.header-bar {
+  background-color: white;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1050;
+  height: 80px;
+}
+
+
+.nav-links-bar {
+  background-color: #f8e6e9;
+  border-bottom: 4px solid #800000;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+  position: fixed; 
+  top: 80px;
+  left: 0;
+  right: 0;
+  z-index: 1040;
+  margin: 0;
+  padding: 0;
+  height: 60px;
+}
+.donate-btn {
+  background-color: #800000;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.donate-btn:hover {
+  background-color: #a00000;
+}
+
+.main-nav {
+  gap: 30px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-item-with-dropdown {
+  position: relative;
+}
+
+.nav-item-with-dropdown .nav-link {
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: color 0.2s ease;
+}
+
+.nav-item-with-dropdown .nav-link:hover {
+  color: #800000;
+}
+
+.custom-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  min-width: 220px;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav-item-with-dropdown:hover .custom-dropdown {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 12px 20px;
+  color: #333;
+  font-weight: 500;
+  text-decoration: none;
+  display: block;
+  transition: background 0.2s ease, padding-left 0.2s ease;
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.dropdown-item:hover {
+  background-color: #fce6e9;
+  padding-left: 25px;
+  color: #800000;
+}
+.custom-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  min-width: 220px;
+  padding: 10px 0;
+  animation: fadeIn 0.3s ease-in-out;
+  transition: all 0.3s ease;
+}
+
+.nav-item-with-dropdown:hover .custom-dropdown {
+  display: block;
+}
+
+.custom-dropdown .dropdown-item {
+  padding: 14px 24px;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #eee;
+  transition: background 0.2s ease, padding-left 0.2s ease;
+}
+
+.custom-dropdown .dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.custom-dropdown .dropdown-item:hover {
+  background-color: #fce6e9;
+  color: #800000;
+  padding-left: 30px;
+}
+
+.back-home-btn {
+  font-weight: bold;
+  padding: 6px 14px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.back-home-btn:hover {
+  background-color: #f07f7f;
+  color: white;
+  text-decoration: none;
+}
+#services {
+  scroll-margin-top: 100px; 
+} */
+@keyframes rotateHeart {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating-heart {
+  display: inline-block;
+  animation: rotateHeart 2s linear infinite;
+}
+
+.header-bar {
+  background-color: white;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1050;
+  height: 90px;
+}
+
+.nav-links-bar {
+  background-color: #f8e6e9; /* Default pale pink background */
+  border-bottom: 4px solid #800000;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+  position: fixed; 
+  top: 80px;
+  left: 0;
+  right: 0;
+  z-index: 1040;
+  margin: 0;
+  padding: 0;
+  height: 60px;
+}
+
+/* Style for when the Navbar is expanded on small screens */
+.navbar-collapse.show {
+  background-color: #fce6e9; /* Pale pink background for expanded menu */
+  border-top: 1px solid #800000;
+  padding-bottom: 10px; /* Add some padding at the bottom */
+}
+
+/* Ensure navbar.toggle is visible and accessible */
+.navbar-toggler {
+  border-color: #800000 !important; /* Make toggle button border visible */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28128, 0, 0, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+
+.donate-btn {
+  background-color: #800000;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.donate-btn:hover {
+  background-color: #a00000;
+}
+
+.main-nav {
+  gap: 30px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-item-with-dropdown {
+  position: relative;
+}
+
+.nav-item-with-dropdown .nav-link {
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: color 0.2s ease;
+}
+
+.nav-item-with-dropdown .nav-link:hover {
+  color: #800000;
+}
+
+/* Default dropdown styling for large screens */
+.custom-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  min-width: 220px;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav-item-with-dropdown:hover .custom-dropdown {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 12px 20px;
+  color: #333;
+  font-weight: 500;
+  text-decoration: none;
+  display: block;
+  transition: background 0.2s ease, padding-left 0.2s ease;
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.dropdown-item:hover {
+  background-color: #fce6e9;
+  padding-left: 25px;
+  color: #800000;
+}
+.custom-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  min-width: 220px;
+  padding: 10px 0;
+  animation: fadeIn 0.3s ease-in-out;
+  transition: all 0.3s ease;
+}
+
+.nav-item-with-dropdown:hover .custom-dropdown {
+  display: block;
+}
+
+.custom-dropdown .dropdown-item {
+  padding: 14px 24px;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #eee;
+  transition: background 0.2s ease, padding-left 0.2s ease;
+}
+
+.custom-dropdown .dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.custom-dropdown .dropdown-item:hover {
+  background-color: #fce6e9;
+  color: #800000;
+  padding-left: 30px;
+}
+
+.back-home-btn {
+  font-weight: bold;
+  padding: 6px 14px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.back-home-btn:hover {
+  background-color: #f07f7f;
+  color: white;
+  text-decoration: none;
+}
+#services {
+  scroll-margin-top: 100px; 
+}
+
+
+/* --- Small Screens Specific Styles --- */
+@media (max-width: 991.98px) { /* Bootstrap's 'lg' breakpoint for collapsing */
+  .header-bar {
+    /* Ensure full width and fixed positioning relative to viewport */
+    width: 100%;
+    left: 0;
+    right: 0;
+    transform: none; /* Remove previous centering transform */
+    max-width: none; /* Remove max-width constraint */
+    padding: 8px 15px; /* Adjust padding for spacing elements */
+    height: 100px; /* Keep reduced height */
+    justify-content: space-between; /* Space out items */
+  }
+
+  .header-bar img {
+    height: 40px; /* Reduced logo height */
+    margin-right: auto; /* Push logo to the far left */
+  }
+
+  /* Adjust placement and spacing of buttons in header bar on small screens */
+  .header-bar .mx-auto { /* For 'Back to home' button */
+    margin: 0 8px; /* Give more space between buttons and logo */
+  }
+
+  .donate-btn {
+    padding: 5px 10px; /* Further reduced padding for donate button */
+    font-size: 0.65rem; /* Further reduced font size for donate button */
+  }
+
+  .back-home-btn {
+    padding: 2px 6px; /* Further reduced padding for home button */
+    font-size: 0.6rem; /* Further reduced font size for home button */
+  }
+
+  .nav-links-bar {
+    top: 50px; /* Adjusted top to match new header height */
+    position: absolute;
+    width: 100%; /* Make it full width now */
+    max-width: none; /* Remove max-width constraint */
+    left: 0; /* Align to the left */
+    transform: none; /* Remove centering transform */
+    right: 0; /* Cover full width */
+  }
+
+  .navbar-collapse {
+    width: 100%; /* Take full width of its container (nav-links-bar) */
+    background-color: #fce6e9; /* Pale pink background for toggle menu */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #800000;
+    padding-bottom: 10px;
+  }
+
+  .main-nav {
+    flex-direction: column; /* Stack nav items vertically */
+    align-items: flex-start; /* Align words to the side (left) */
+    padding: 0;
+    width: 100%; /* Take full width */
+    gap: 0; /* Remove gap between items */
+  }
+
+  .nav-item-with-dropdown {
+    width: 100%; /* Full width for each nav item */
+    border-bottom: 1px solid rgba(128, 0, 0, 0.1); /* Separator */
+  }
+
+  .nav-item-with-dropdown:last-child {
+    border-bottom: none;
+  }
+
+  .nav-item-with-dropdown .nav-link {
+    font-size: 0.9rem; /* Slightly smaller font size for nav links */
+    color: #333; /* Ensure visibility */
+    padding: 10px 15px; /* Adjust padding for better tapping */
+    width: 100%;
+    text-align: left; /* Align words to the side (left) */
+  }
+
+  .nav-item-with-dropdown .nav-link:hover {
+    background-color: #f8d4dc; /* Lighter pink on hover */
+  }
+
+  /* Dropdown behavior for mobile */
+  .nav-item-with-dropdown:hover .custom-dropdown,
+  .nav-item-with-dropdown.show .custom-dropdown { /* .show for potential JS toggling */
+    display: block;
+    position: static; /* Stack dropdown items normally */
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    background-color: rgba(252, 230, 233, 0.8); /* Slightly transparent for nested feel */
+  }
+
+  .custom-dropdown .dropdown-item {
+    font-size: 0.8rem; /* Even smaller font for sub-items */
+    color: #555; /* Ensure visibility */
+    padding: 8px 25px; /* Indent sub-items */
+    border-bottom: none; /* No border for sub-items */
+  }
+
+  .custom-dropdown .dropdown-item:hover {
+    background-color: #f6c8d3; /* Darker hover for sub-items */
+    padding-left: 30px; /* Increase indent on hover */
+    color: #800000;
+  }
+}

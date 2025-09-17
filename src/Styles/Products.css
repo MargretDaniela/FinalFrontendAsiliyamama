@@ -1,0 +1,88 @@
+.product-card {
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    height: 220px;
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.product-card .card-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.product-card .card-title {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 0.75rem;
+}
+
+/* Note: product cards don't have a subtitle like events, but this can be kept if needed for future use */
+.product-card .card-subtitle {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.product-card .card-text.description {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.product-card .card-text small {
+    color: #6c757d;
+    font-size: 0.875rem;
+    display: block;
+    margin-top: auto;
+}
+
+.products-page-header h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.products-page-header p {
+    font-size: 1.25rem;
+    color: #666;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .product-card img {
+        height: 180px;
+    }
+
+    .products-page-header h2 {
+        font-size: 2.2rem;
+    }
+
+    .products-page-header p {
+        font-size: 1rem;
+    }
+}

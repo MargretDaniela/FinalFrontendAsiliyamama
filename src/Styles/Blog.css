@@ -1,0 +1,145 @@
+/* .blog-card {
+  transition: transform 0.3s ease;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.read-more-btn {
+  background-color: #992525;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.read-more-btn:hover {
+  background-color: #7a1e1e;
+  color: #fff;
+} */
+
+/* src/Styles/Blog.css */
+.blog-wrapper {
+    background-color: #f8f9fa; /* Light background for the whole page */
+    min-height: 100vh; /* Ensure it takes full viewport height */
+}
+
+.blog-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+    margin-bottom: 1.5rem; /* Space between cards */
+    display: flex; /* Flexbox for consistent height */
+    flex-direction: column;
+    height: 100%; /* Ensure cards take full height of their column */
+    background-color: #fff; /* White background for cards */
+}
+
+.blog-card:hover {
+    transform: translateY(-8px); /* Slightly more pronounced lift */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* More intense shadow on hover */
+}
+
+.blog-card img {
+    height: 220px;
+    object-fit: cover;
+    width: 100%; /* Ensures the image fills the card width */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.blog-card .card-body {
+    padding: 1.5rem; /* Increased padding for better spacing */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Allows body to expand and push content down */
+}
+
+.blog-card .card-title {
+    font-weight: bold;
+    font-size: 1.4rem; /* Slightly larger title */
+    color: #333;
+    margin-bottom: 0.75rem;
+}
+
+.blog-card .card-text {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+    line-height: 1.6;
+    flex-grow: 1; /* Allows description to take up available space */
+}
+
+.blog-page-header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.blog-page-header p {
+    font-size: 1.25rem;
+    color: #666;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.read-more-btn {
+    background-color: #007bff; /* Bootstrap primary blue */
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    color: #fff;
+}
+
+/* Modal Styling - ensure consistent theme */
+.modal-header {
+    background-color: #007bff; /* Primary blue for modal headers */
+    color: white;
+    border-bottom: 1px solid #dee2e6; /* Light border */
+}
+
+.modal-title {
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-footer {
+    border-top: 1px solid #dee2e6; /* Light border */
+    background-color: #f8f9fa; /* Light background for footer */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .blog-card img {
+        height: 180px;
+    }
+
+    .blog-page-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .blog-page-header p {
+        font-size: 1rem;
+    }
+}

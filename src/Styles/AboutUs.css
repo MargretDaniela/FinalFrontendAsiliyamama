@@ -1,0 +1,55 @@
+/* Reset margins and enable smooth scrolling */
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* Main section title styling */
+.section-title {
+  font-size: 2.5rem;
+  padding-top: 1.2rem !important;
+  padding-bottom: 1.2rem;
+  margin-top: 0 !important;
+}
+
+/* Vision, Mission, Goals box container */
+.vision-mission-goals {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  padding-top: 1rem;
+  gap: 9rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Hover effect for each card box */
+.hover-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover styling when user interacts with the box */
+.hover-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  border-color: #dc3545; /* Bootstrap danger color */
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.75rem;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .vision-mission-goals {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+

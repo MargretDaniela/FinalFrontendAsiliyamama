@@ -1,0 +1,11 @@
+#pages-top-bar .nav-item .dropdown-toggle::after {
+  /* Default arrow color */
+  color: white;
+}
+
+#pages-top-bar .nav-item .dropdown-toggle:hover::after,
+#pages-top-bar .nav-item .dropdown-toggle[aria-expanded="true"]::after {
+  /* Arrow color on hover and when the dropdown is open */
+  color: white;
+  transform: rotate(180deg);
+}

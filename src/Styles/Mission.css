@@ -1,0 +1,13 @@
+.mission-page {
+  background-color: #fdf9f9;
+  color: #333;
+}
+
+.mission-page h2, .mission-page h4 {
+  color: #992525;
+}
+
+.mission-page p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
