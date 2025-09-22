@@ -294,8 +294,8 @@ import Impact from './Impact';
 import Footer from './Footer';
 import { useScrollAnimation } from './useScrollAnimation'; // Assuming this hook is correctly defined elsewhere
 
-// const API_BASE_URL = 'http://localhost:5000'; // Flask backend URL
-const API_BASE_URL = process.env.REACT_APP_API_URL;
+const API_BASE_URL = 'http://localhost:5000'; // Flask backend URL
+// const API_BASE_URL = process.env.REACT_APP_API_URL;
 const Home = () => {
     const [homeData, setHomeData] = useState(null);
     const [currentIndex, setCurrentIndex] = useState(0);

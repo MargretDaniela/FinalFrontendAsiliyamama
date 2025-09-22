@@ -37,9 +37,9 @@ const AdminProfileSettingsPage = ({ onProfileUpdate }) => {
     const [isUpdatingProfile, setIsUpdatingProfile] = useState(false);
     const [isLoadingProfile, setIsLoadingProfile] = useState(true);
     const [fetchError, setFetchError] = useState(null);
-    const API_BASE_URL = process.env.REACT_APP_API_URL;
+    const API_BASE_URL = 'http://127.0.0.1:5000';
+    // const API_BASE_URL = process.env.REACT_APP_API_URL;
 
-    // const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://127.0.0.1:5000';
     const AUTH_API_URL = `${API_BASE_URL}/api/v1/auth`;
 
     // Effect to fetch user profile details on component mount

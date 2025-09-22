@@ -4,7 +4,8 @@ import { FaEdit, FaTrash, FaPlus, FaSave, FaEye, FaDownload } from "react-icons/
 import { authenticatedFetch } from '../../pages/authService';
 
 const WorkshopsDashboard = ({ userType }) => {
-    const API_BASE_URL = process.env.REACT_APP_API_URL;
+    // const API_BASE_URL = process.env.REACT_APP_API_URL;
+    const API_BASE_URL = 'http://127.0.0.1:5000';
     // State for managing workshops
     const [workshops, setWorkshops] = useState([]);
     const [loadingWorkshops, setLoadingWorkshops] = useState(true);

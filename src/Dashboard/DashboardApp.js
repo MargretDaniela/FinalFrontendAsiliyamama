@@ -41,9 +41,9 @@ const DashboardApp = ({ onHomepageUpdate }) => {
     const [currentPage, setCurrentPage] = useState('dashboard');
 
     const location = useLocation();
-    const API_BASE_URL = process.env.REACT_APP_API_URL;
+    // const API_BASE_URL = process.env.REACT_APP_API_URL;
 
-    // const API_BASE_URL = 'http://127.0.0.1:5000';
+    const API_BASE_URL = 'http://127.0.0.1:5000';
 
     const fetchUserProfileDetails = useCallback(async () => {
         const token = localStorage.getItem('authToken');

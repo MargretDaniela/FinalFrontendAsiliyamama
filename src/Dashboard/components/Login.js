@@ -3,7 +3,8 @@ import { Container, Form, Button, Card, Alert, Spinner, InputGroup} from 'react-
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 const AdminLogin = ({ onLogin }) => {
-  const API_BASE_URL = process.env.REACT_APP_API_URL;
+  // const API_BASE_URL = process.env.REACT_APP_API_URL;
+  const API_BASE_URL = 'http://127.0.0.1:5000';
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');

@@ -2,7 +2,8 @@
 
 // Function to refresh the access token using the refresh token
 export const refreshAccessToken = async () => {
-  const API_BASE_URL = process.env.REACT_APP_API_URL;
+  const API_BASE_URL = 'http://127.0.0.1:5000';
+  // const API_BASE_URL = process.env.REACT_APP_API_URL;
   const refreshToken = localStorage.getItem('refreshToken');
 
   if (!refreshToken) {

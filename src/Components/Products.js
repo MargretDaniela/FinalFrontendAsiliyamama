@@ -91,7 +91,8 @@ import "../Styles/Products.css";
 import Footer from './Footer';
 
 const ProductsPage = () => {
-    const API_BASE_URL = process.env.REACT_APP_API_URL;
+    // const API_BASE_URL = process.env.REACT_APP_API_URL;
+    const API_BASE_URL = 'http://127.0.0.1:5000'; 
     const [products, setProducts] = useState([]);
     const [pageContent, setPageContent] = useState({ title: "", description: "" });
     const [loadingProducts, setLoadingProducts] = useState(true);

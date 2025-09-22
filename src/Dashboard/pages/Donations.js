@@ -5,8 +5,8 @@ import { authenticatedFetch } from './authService';
 
 const Donations = ({ userType }) => {
     // Corrected API_BASE_URL for the backend
-    const API_BASE_URL = process.env.REACT_APP_API_URL;
-    // const API_BASE_URL = 'http://localhost:5000';
+    // const API_BASE_URL = process.env.REACT_APP_API_URL;
+   const API_BASE_URL = 'http://localhost:5000';
 
     // Consolidated state for all donations
     const [donations, setDonations] = useState([]);

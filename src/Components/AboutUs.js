@@ -4,8 +4,8 @@ import axios from 'axios';
 import { Alert } from 'react-bootstrap'; // <--- Added Alert import here
 import '../Styles/AboutUs.css';
 
-// const API_BASE_URL = 'http://127.0.0.1:5000'; 
-const API_BASE_URL = process.env.REACT_APP_API_URL;
+const API_BASE_URL = 'http://127.0.0.1:5000'; 
+// const API_BASE_URL = process.env.REACT_APP_API_URL;
 
 const AboutUs = () => {
     const { hash } = useLocation();

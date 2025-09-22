@@ -1,16 +1,80 @@
-.donate-form-section {
-  background-image: url('../Components/Images/First\ family.jpg');
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
+/* Donate.css */
+.donate-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.donate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(128, 0, 0, 0.2) !important;
 }
 
 .form-box {
-  background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    background: linear-gradient(145deg, #ffffff, #f8f9fa);
 }
-.card-img-top {
-  height: 180px;
-  object-fit: cover;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
+
+.donation-number {
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    border: 2px dashed #992525;
+}
+
+.btn {
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.form-control, .form-select {
+    border-radius: 8px;
+    border: 2px solid #dee2e6;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: ##992525;
+    box-shadow: 0 0 0 0.2rem rgba(128, 0, 0, 0.25);
+}
+
+.alert {
+    border-radius: 10px;
+    border: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .donate-card {
+        margin-bottom: 2rem;
+    }
+    
+    .form-box {
+        padding: 2rem !important;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+}
+
+/* Animation for success message */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.alert {
+    animation: fadeIn 0.5s ease;
+}
+
+/* Custom radio button styling */
+.form-check-input:checked {
+    background-color: #992525;
+    border-color: #992525;
+}
+
+.form-check-label {
+    cursor: pointer;
+    user-select: none;
 }

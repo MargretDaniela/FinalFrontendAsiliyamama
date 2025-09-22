@@ -81,9 +81,9 @@ const Goals = () => {
     const [goals, setGoals] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-     const API_BASE_URL = process.env.REACT_APP_API_URL;
+    // const API_BASE_URL = process.env.REACT_APP_API_URL;
 
-    // const API_BASE_URL = 'http://localhost:5000'; // Ensure this matches your Flask backend URL
+    const API_BASE_URL = 'http://localhost:5000'; // Ensure this matches your Flask backend URL
 
     useEffect(() => {
         const fetchGoals = async () => {

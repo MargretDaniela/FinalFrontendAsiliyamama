@@ -67,8 +67,8 @@ import CountUp from 'react-countup';
 import axios from 'axios';
 import { Alert } from 'react-bootstrap'; // Import Alert for error display
 
-const API_BASE_URL = process.env.REACT_APP_API_URL;
-// const API_BASE_URL = 'http://127.0.0.1:5000'; // Your backend API base URL
+// const API_BASE_URL = process.env.REACT_APP_API_URL;
+const API_BASE_URL = 'http://127.0.0.1:5000'; // Your backend API base URL
 
 const Impact = () => {
     const [impactData, setImpactData] = useState({

@@ -444,8 +444,8 @@ import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { Container, Form, Button, Alert, Spinner, Row, Col, Card } from 'react-bootstrap';
 import { FaSave, FaTrash, FaPlus, FaTimes } from 'react-icons/fa'; // Added FaPlus for "Add Images"
 import axios from 'axios';
-// const API_BASE_URL = 'http://localhost:5000'; // Flask backend URL
-const API_BASE_URL = process.env.REACT_APP_API_URL;
+const API_BASE_URL = 'http://localhost:5000'; // Flask backend URL
+// const API_BASE_URL = process.env.REACT_APP_API_URL;
 const HomePageDashboard = () => {
     const [formData, setFormData] = useState({
         headline: '',

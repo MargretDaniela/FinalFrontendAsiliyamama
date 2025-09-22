@@ -6,7 +6,8 @@ import { format } from 'date-fns';
 
 
 const BlogDashboard = ({ userType }) => {
-  const API_BASE_URL = process.env.REACT_APP_API_URL;
+  // const API_BASE_URL = process.env.REACT_APP_API_URL;
+  const API_BASE_URL = 'http://127.0.0.1:5000';
   const [blogPosts, setBlogPosts] = useState([]);
   const [loadingBlogPosts, setLoadingBlogPosts] = useState(true);
   const [error, setError] = useState("");

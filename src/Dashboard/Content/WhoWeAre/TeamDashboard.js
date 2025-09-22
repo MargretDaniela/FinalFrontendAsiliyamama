@@ -27,8 +27,8 @@ const DashboardTeam = ({ userType }) => {
     const isSuperAdmin = userType === 'super_admin';
     const isAdmin = userType === 'admin' || isSuperAdmin;
 
-    const API_BASE_URL = process.env.REACT_APP_API_URL;
-    // const API_BASE_URL = 'http://localhost:5000';
+    // const API_BASE_URL = process.env.REACT_APP_API_URL;
+    const API_BASE_URL = 'http://localhost:5000';
 
     const fetchTeamData = useCallback(async () => {
         setLoading(true);

@@ -249,7 +249,8 @@ import '../Styles/Blog.css';
 import Footer from './Footer';
 
 const Blog = () => {
-    const API_BASE_URL = process.env.REACT_APP_API_URL;
+    const API_BASE_URL = 'http://127.0.0.1:5000';
+    // const API_BASE_URL = process.env.REACT_APP_API_URL;
     const [blogPosts, setBlogPosts] = useState([]);
     const [loadingBlogPosts, setLoadingBlogPosts] = useState(true);
     const [pageTitle, setPageTitle] = useState("Our Blog Posts");

@@ -575,7 +575,8 @@ import "../Styles/Events.css";
 import Footer from './Footer';
 
 const EventsPage = () => {
-  const API_BASE_URL = process.env.REACT_APP_API_URL;
+  // const API_BASE_URL = process.env.REACT_APP_API_URL;
+  const API_BASE_URL = 'http://127.0.0.1:5000'; 
   const [events, setEvents] = useState([]);
   const [loadingEvents, setLoadingEvents] = useState(true);
   const [pageTitle, setPageTitle] = useState("Upcoming Events");

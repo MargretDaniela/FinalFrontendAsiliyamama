@@ -31,8 +31,8 @@ const AdminContactMessagesPage = () => {
   const [isAdmin, setIsAdmin] = useState(false);
   const [isSuperAdmin, setIsSuperAdmin] = useState(false);
 
-  // const API_BASE_URL = 'http://127.0.0.1:5000/api/v1';
-  const API_BASE_URL = process.env.REACT_APP_API_URL;
+  const API_BASE_URL = 'http://127.0.0.1:5000/api/v1';
+  // const API_BASE_URL = process.env.REACT_APP_API_URL;
 
   const handleAuthError = useCallback((errMessage) => {
     setError(errMessage);

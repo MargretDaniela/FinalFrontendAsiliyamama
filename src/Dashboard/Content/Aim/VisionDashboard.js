@@ -4,7 +4,7 @@ import { FaEdit, FaTrash, FaPlus, FaSave, FaEye, FaDownload} from 'react-icons/f
 import { authenticatedFetch } from '../Latest/authService'; // Corrected path assuming VisionDashboard is two levels deep from src/
 
 const VisionDashboard = ({ userType }) => {
-    const API_BASE_URL = process.env.REACT_APP_API_URL;
+    // const API_BASE_URL = process.env.REACT_APP_API_URL;
     const [visionContent, setVisionContent] = useState(null);
     const [visionPoints, setVisionPoints] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -41,7 +41,7 @@ const VisionDashboard = ({ userType }) => {
     const isSuperAdmin = userType === 'super_admin';
     const isAdmin = userType === 'admin' || isSuperAdmin;
 
-    // const API_BASE_URL = 'http://localhost:5000'; // Ensure this matches your Flask backend URL
+    const API_BASE_URL = 'http://localhost:5000'; // Ensure this matches your Flask backend URL
 
     // --- Fetching Data ---
     const fetchVisionData = useCallback(async () => {

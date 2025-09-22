@@ -29,8 +29,8 @@ const ServicesDashboard = ({ userType }) => {
     const isSuperAdmin = userType === 'super_admin';
     const isAdmin = userType === 'admin' || isSuperAdmin;
 
-    const API_BASE_URL = process.env.REACT_APP_API_URL;
-    
+    // const API_BASE_URL = process.env.REACT_APP_API_URL;
+    const API_BASE_URL = 'http://127.0.0.1:5000';
     // --- Fetching Data ---
     const fetchServicesData = useCallback(async () => {
         setLoading(true);

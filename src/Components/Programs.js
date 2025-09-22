@@ -108,8 +108,8 @@ import '../Styles/Programs.css';
 
 const Programs = () => {
     // Define API_BASE_URL inside the component to ensure it's in scope
-    const API_BASE_URL = process.env.REACT_APP_API_URL;
-
+    // const API_BASE_URL = process.env.REACT_APP_API_URL;
+    const API_BASE_URL = 'http://127.0.0.1:5000'; 
     const [programs, setPrograms] = useState([]);
     const [loadingPrograms, setLoadingPrograms] = useState(true);
     const [pageSettings, setPageSettings] = useState({

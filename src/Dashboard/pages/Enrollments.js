@@ -5,7 +5,8 @@ import { authenticatedFetch } from './authService'; // Adjust path as needed
 
 // Enrollments Component - Consolidates all enrollment management (list, create, edit, delete)
 const Enrollments = ({ userType }) => {
-  const API_BASE_URL = process.env.REACT_APP_API_URL;
+  // const API_BASE_URL = process.env.REACT_APP_API_URL;
+  const API_BASE_URL = 'http://127.0.0.1:5000';
   const [enrollments, setEnrollments] = useState([]);
   const [loading, setLoading] = useState(true); // Loading state for initial fetch
   const [error, setError] = useState(''); // Error message state for fetching
